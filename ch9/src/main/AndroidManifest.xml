@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    권한...-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!--   hardware 요구사항..
+     내 앱에서 이런 하드웨어를 사용할 것이다.. 선언..
+     유저 디바이스에 이용하는 하드웨어가 있어야 한다는 조건 명시..
+     telephony, camera ....
+     required : true : play store 에서 필터링 해서.. 아래 hardware 가 없는 폰에는 앱이 노출되지 않는다.-->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidLab1">
+        <activity
+            android:name=".Test3Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Test2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sub4Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION_SUB4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sub3Activity"
+            android:exported="true">
+            <intent-filter>
+
+                <!--
+action, category, data 어느것을 추가할지는 개발자 임의 선택..
+선언되어 있으면 모두 맞추어야 한다.
+action 이 여러개, category 여러개, data 여러개 가능하다..
+그중에서 하나만 맞으면 된다..
+                -->
+                <action android:name="ACTION_SUB3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 패키지명을 추가하는 것이 권장사항이다.. -->
+                <category android:name="com.example.ch9.CATEGORY_SUB3" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sub2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION_SUB2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sub1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Test1Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
