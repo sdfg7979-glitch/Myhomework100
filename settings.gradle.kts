@@ -21,7 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "My Application"
 include(":app")
-include(":app:ch8")
-include(":ch9")
-include(":ch10")
-include(":ch11")
+include(":ch6")
+include(":ch7")
