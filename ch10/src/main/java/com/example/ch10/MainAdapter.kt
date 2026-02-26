@@ -12,17 +12,15 @@ class MainAdapter(val mainDataList: MutableList<MainData>): RecyclerView.Adapter
         parent: ViewGroup,
         viewType: Int
     ): MainViewHolder {
-        return MainViewHolder(itemMainBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return MainViewHolder(ItemMainBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
-        holder: MainViewHolder,
-        position: Int
-        ){
-            holder.binding.tnname.text = mainDataList.get(position).name
-            holder.binding.tvmessage.text = mainDataList.get(position).message
-            holder.binding.tvdate.text = mainDataList.get(position).date
-        }
+        //item외에 표시돼는 데이터를 세팅한다
+        holder.binding.tvDate.text = mainDataList[position].date
+        holder.binding.tvMessage.text = mainDataList[position].message
+        holder.binding.tvName.text = mainDataList[position].name
+
     }
 
 
@@ -30,4 +28,4 @@ class MainAdapter(val mainDataList: MutableList<MainData>): RecyclerView.Adapter
         return mainDataList.size
     }
 }
-class MainViewHolder(val binding: ItemBinding) : RecyclerView.ViewHolder(binding.root)
+class MainViewHolder(val binding: ItemMainBinding) : RecyclerView.ViewHolder(binding.root)
