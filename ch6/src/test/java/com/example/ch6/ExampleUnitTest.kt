@@ -1,4 +1,4 @@
-package com.example.ch11
+package com.example.ch6
 
 import org.junit.Test
 

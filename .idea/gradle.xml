@@ -11,10 +11,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app/ch8" />
-            <option value="$PROJECT_DIR$/ch10" />
-            <option value="$PROJECT_DIR$/ch11" />
-            <option value="$PROJECT_DIR$/ch9" />
+            <option value="$PROJECT_DIR$/ch6" />
+            <option value="$PROJECT_DIR$/ch7" />
           </set>
         </option>
       </GradleProjectSettings>

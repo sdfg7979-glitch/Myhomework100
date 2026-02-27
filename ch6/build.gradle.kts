@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ch11"
+    namespace = "com.example.ch6"
     compileSdk {
         version = release(36)
     }
