@@ -67,7 +67,7 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@id/txtAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_top_toTopOf="@id/txtAddress"/>
+        />
 
     <TextView
         android:id="@+id/textView3"

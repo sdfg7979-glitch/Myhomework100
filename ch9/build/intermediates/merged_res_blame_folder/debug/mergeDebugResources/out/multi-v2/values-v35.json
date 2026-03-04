@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.ch9-mergeDebugResources-33:/values-v35/values-v35.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\sdfg79\\.gradle\\caches\\9.1.0\\transforms\\fbf2cb034cf9792caedcd85975f3e761\\workspace\\transformed\\material-1.13.0\\res\\values-v35\\values-v35.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,149,247,349",
+                        "endColumns": "93,97,101,99",
+                        "endOffsets": "144,242,344,444"
+                    }
+                }
+            ]
+        }
+    ]
+}

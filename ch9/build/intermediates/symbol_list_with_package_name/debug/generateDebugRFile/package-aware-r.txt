@@ -1,0 +1,26 @@
+com.example.ch9
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id button
+id button1
+id button2
+id button3
+id button4
+id dataView
+id main
+id textView
+layout activity_some
+layout activity_sub1
+layout activity_sub2
+layout activity_sub3
+layout activity_sub4
+layout activity_test1
+layout activity_test2
+layout activity_test3
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base_Theme_MyApplication
+style Theme_MyApplication

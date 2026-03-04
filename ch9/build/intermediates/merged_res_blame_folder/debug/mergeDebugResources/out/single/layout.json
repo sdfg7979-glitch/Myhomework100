@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.example.ch9-mergeDebugResources-34:/layout/activity_sub4.xml",
+        "source": "com.example.ch9-main-37:/layout/activity_sub4.xml"
+    },
+    {
+        "merged": "com.example.ch9-mergeDebugResources-34:/layout/activity_sub1.xml",
+        "source": "com.example.ch9-main-37:/layout/activity_sub1.xml"
+    },
+    {
+        "merged": "com.example.ch9-mergeDebugResources-34:/layout/activity_test1.xml",
+        "source": "com.example.ch9-main-37:/layout/activity_test1.xml"
+    },
+    {
+        "merged": "com.example.ch9-mergeDebugResources-34:/layout/activity_sub2.xml",
+        "source": "com.example.ch9-main-37:/layout/activity_sub2.xml"
+    },
+    {
+        "merged": "com.example.ch9-mergeDebugResources-34:/layout/activity_sub3.xml",
+        "source": "com.example.ch9-main-37:/layout/activity_sub3.xml"
+    },
+    {
+        "merged": "com.example.ch9-mergeDebugResources-34:/layout/activity_some.xml",
+        "source": "com.example.ch9-main-37:/layout/activity_some.xml"
+    },
+    {
+        "merged": "com.example.ch9-mergeDebugResources-34:/layout/activity_test3.xml",
+        "source": "com.example.ch9-main-37:/layout/activity_test3.xml"
+    },
+    {
+        "merged": "com.example.ch9-mergeDebugResources-34:/layout/activity_test2.xml",
+        "source": "com.example.ch9-main-37:/layout/activity_test2.xml"
+    }
+]
