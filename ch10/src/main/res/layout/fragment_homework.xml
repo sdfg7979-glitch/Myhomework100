@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:hint="이름"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="이메일"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMale"
+                android:text="남성"/>
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/radioFemale"
+                android:text="여성"/>
+
+        </RadioGroup>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkAgree"
+            android:text="이용약관에 동의합니다"/>
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:text="가입하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

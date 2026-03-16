@@ -37,5 +37,28 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, "UserDB", null, 1) 
         val result = db.insert("User", null, contentValues)
         db.close()
         return result
+
+    }
+    fun getLastUser(): User? {
+        val db = this.readableDatabase
+        val query = "SELECT * FROM User ORDER BY id DESC LIMIT 1"
+        val cursor = db.rawQuery(query, null)
+        if(!cursor.moveToFirst()){
+            return null
+        }
+
+        cursor.moveToFirst()
+
+        val id = cursor.getInt(0)
+        val name = cursor.getString(1)
+        val email = cursor.getString(2)
+        val gender = cursor.getString(3)
+        db.close()
+        return User(
+            id = id,
+            name = name,
+            email = email,
+            gender = gender
+        )
     }
 }
